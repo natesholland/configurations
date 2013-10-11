@@ -1,4 +1,11 @@
 /*
+
+This is a configuration file which has some extra hotkeys designed for mac users using sublime. These are designed to be intuitive to most Mac users.
+
+Things I've changed:
+CMD+shift+NUM moves to that number's view.
+CMD+left/CMD+right toggles between the tabs in the current view.
+
 On OS X, basic text manipulations (left, right, command+left, etc) make use of the system key bindings,
 and don't need to be repeated here. Anything listed here will take precedence, however.
 */
