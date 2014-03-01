@@ -1,5 +1,5 @@
-Set up instructions
-===================
+= Set up instructions
+
 
 Press cntrl + f7 to enable tabbing between options
 
