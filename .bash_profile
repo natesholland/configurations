@@ -19,3 +19,8 @@ export LSCOLORS=GxxxxxxxCxxxxxxxxxxxxx
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
+
+#Aliasing some commonly used commands
+alias ..="cd .."
+alias ~="cd ~"
+
