@@ -7,15 +7,10 @@ export PATH
 source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ git(\1)/'
-}
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 #Trying to edit my prompt
-#PS1="\u: \W\[\033[32m\] $(__git_ps1 " git:(%s)") \[\033[00m\] \$ "
 export PS1='\u: \W\[\033[32m\]$(__git_ps1 " git:(%s)")\[\033[00m\] \$ '
 
 #setting the color scheme so directories and executables look different
