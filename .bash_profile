@@ -11,8 +11,8 @@ GIT_PS1_SHOWDIRTYSTATE=1
 export PATH="/usr/local/heroku/bin:$PATH"
 
 #Trying to edit my prompt
-export PS1='\u: \W\[\033[32m\]$(__git_ps1 " git:(%s)")\[\033[00m\] \$ '
-
+export PS1='\W\[\033[32m\]$(__git_ps1 " git:(%s)")\[\033[00m\] \$ '
+PS1="\[\033[36m\]\$(~/.rvm/bin/rvm-prompt u v)\[\033[00m\] $PS1"
 #setting the color scheme so directories and executables look different
 export CLICOLOR=1
 export LSCOLORS=GxxxxxxxCxxxxxxxxxxxxx
