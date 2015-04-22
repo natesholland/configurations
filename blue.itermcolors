@@ -187,9 +187,9 @@
 		<key>Blue Component</key>
 		<real>1</real>
 		<key>Green Component</key>
-		<real>0.862213134765625</real>
+		<real>1</real>
 		<key>Red Component</key>
-		<real>0.82831704616546631</real>
+		<real>1</real>
 	</dict>
 	<key>Selected Text Color</key>
 	<dict>
