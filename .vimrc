@@ -1,11 +1,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Maintainer: 
 "       Amir Salihefendic
 "       http://amix.dk - amix@amix.dk
 "
-" Version:
+" Version: 
 "       5.0 - 29/05/12 15:43:36
 "
-" Blog_post:
+" Blog_post: 
 "       http://amix.dk/blog/post/19691#The-ultimate-Vim-configuration-on-Github
 "
 " Awesome_version:
@@ -18,7 +19,7 @@
 " Syntax_highlighted:
 "       http://amix.dk/vim/vimrc.html
 "
-" Raw_version:
+" Raw_version: 
 "       http://amix.dk/vim/vimrc.txt
 "
 " Sections:
@@ -89,7 +90,7 @@ set whichwrap+=<,>,h,l
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases
+" When searching try to be smart about cases 
 set smartcase
 
 " Highlight search results
@@ -121,6 +122,13 @@ set number
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable syntax highlighting
+syntax enable
+
+colorscheme desert
+set background=dark
+
+set gfn=Bitstream\ Vera\ Sans\ Mono:h16
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -128,15 +136,7 @@ if has("gui_running")
     set guioptions+=e
     set t_Co=256
     set guitablabel=%M\ %t
-    " Enable syntax highlighting
-    syntax enable
-    set background=light
-    colorscheme solarized
-else
-    " Enable syntax highlighting
-    syntax enable
-    set background=light
-    colorscheme desert
+    set guifont=Bitstream\ Vera\ Sans\ Mono:h16
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -211,11 +211,8 @@ map <C-l> <C-W>l
 " Close the current buffer
 map <leader>bd :Bclose<cr>
 
-nnoremap SW :StripWhitespace
-
 " Close all the buffers
 map <leader>ba :1,1000 bd!<cr>
-
 
 " Super useful when editing files in the same directory
 nnoremap tk  :tabfirst<CR>
@@ -229,8 +226,7 @@ nnoremap td  :tabclose<CR>
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
-nnoremap :e  :edit<CR>
-" Specify the behavior when switching between buffers
+" Specify the behavior when switching between buffers 
 try
   set switchbuf=useopen,usetab,newtab
   set stal=2
@@ -355,33 +351,6 @@ set splitright
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call plug#begin('~/.vim/plugged')
-
-" Make sure you use single quotes
-Plug 'junegunn/vim-easy-align'
-" Group dependencies, vim-snippets depends on ultisnips
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-
-" On-demand loading
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-
-" Using git URL
-Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-
-" Plugin options
-Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-
-" Plugin outside ~/.vim/plugged with post-update hook
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-
-" Unmanaged plugin (manually installed and updated)
-Plug '~/my-prototype-plugin'
-
-Plug 'ctrlpvim/ctrlp.vim'
-
-call plug#end()
-
 function! CmdLine(str)
     exe "menu Foo.Bar :" . a:str
     emenu Foo.Bar
@@ -438,38 +407,3 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
-
-highlight ColorColumn ctermbg=7
-
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-Bundle 'ntpeters/vim-better-whitespace'
-
-Bundle 'Valloric/YouCompleteMe'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line

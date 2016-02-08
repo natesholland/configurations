@@ -5,7 +5,7 @@ export ZSH=/Users/nateh/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="nate"
 
 . /Users/nateh/.z.sh
 
@@ -49,8 +49,6 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git ruby rails rvm)
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 source /Users/nateh/code/open/zsh-git-prompt/zshrc.sh
 
 # User configuration
@@ -85,3 +83,19 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gs='git status'
+alias gca='git commit -a'
+alias ga='git add'
+alias gd='git diff'
+alias gl='git log'
+alias gll='git last'
+alias gch='git checkout'
+alias gbc='git branch --contains'
+alias glc='git log --pretty=format:'%H' -n 1 | pbcopy'
+alias gcb='git rev-parse --abbrev-ref HEAD | pbcopy'
+
+alias mvi='mvim'
+
+
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
