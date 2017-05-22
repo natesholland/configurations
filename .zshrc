@@ -96,6 +96,6 @@ alias gcb='git rev-parse --abbrev-ref HEAD | pbcopy'
 
 alias mvi='mvim'
 
-
+eval $(thefuck --alias)
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
