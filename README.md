@@ -21,5 +21,6 @@ These are just some configurations file that I like, anyone is welcome to use th
 * [Z](https://github.com/rupa/z)
 * [Caffeine](http://lightheadsw.com/caffeine/)
 * [Karabiner Elements](https://github.com/tekezo/Karabiner-Elements) (might need old Karabiner and Seil, capslock key to noaction in settings)
+* [Slack](https://slack.com/downloads)
 * Fix Scroll Direction
 
