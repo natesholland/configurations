@@ -39,3 +39,36 @@
   
 'atom-text-editor, atom-text-editor.vim-mode':
   'ctrl-b': 'git-blame:toggle'
+
+
+'atom-text-editor':
+  'cmd-k l':      'window:focus-pane-on-right'
+  'cmd-k h':      'window:focus-pane-on-left'
+  'cmd-k cmd-l':  'pane:split-right-and-copy-active-item'
+  'cmd-k cmd-h':  'pane:split-left-and-copy-active-item'
+  'cmd-k k':      'window:focus-pane-above'
+  'cmd-k j':      'window:focus-pane-below'
+  'cmd-k cmd-k':  'pane:split-up-and-copy-active-item'
+  'cmd-k cmd-j':  'pane:split-down-and-copy-active-item'
+  'cmd-h':        'pane:show-previous-item'
+  'cmd-l':        'pane:show-next-item'
+
+
+'body':
+  'cmd-k l':      'window:focus-pane-on-right'
+  'cmd-k h':      'window:focus-pane-on-left'
+  'cmd-k k':      'window:focus-pane-above'
+  'cmd-k j':      'window:focus-pane-below'
+  'cmd-h':        'pane:show-previous-item'
+  'cmd-l':        'pane:show-next-item'
+  'alt-cmd-h':    'pane:show-previous-item'
+  'alt-cmd-l':    'pane:show-next-item'
+
+'.tree-view':
+  'cmd-k l':      'window:focus-pane-on-right'
+  'cmd-k h':      'window:focus-pane-on-left'
+  'cmd-k cmd-l':  'tree-view:open-selected-entry-right'
+  'cmd-k cmd-h':  'tree-view:open-selected-entry-left'
+  'cmd-k cmd-j':  'tree-view:open-selected-entry-down'
+  'cmd-k cmd-k':  'tree-view:open-selected-entry-up'
+
