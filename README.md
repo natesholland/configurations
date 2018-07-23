@@ -17,6 +17,7 @@ These are just some configurations file that I like, anyone is welcome to use th
 * RVM: `\curl -sSL https://get.rvm.io | bash -s stable --ruby`
 * [MacVim](http://macvim-dev.github.io/macvim/)
 * [iTerm](https://www.iterm2.com/downloads.html)
+  * [Fix word skipping](https://apple.stackexchange.com/questions/154292/iterm-going-one-word-backwards-and-forwards)
 * [divvy](http://mizage.com/divvy/)
 * [Z](https://github.com/rupa/z)
 * [Caffeine](http://lightheadsw.com/caffeine/)
