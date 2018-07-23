@@ -100,6 +100,8 @@ alias gchb='git checkout-b'
 alias gbc='git branch --contains'
 alias glc='git log --pretty=format:'%H' -n 1 | pbcopy'
 alias gcb='git rev-parse --abbrev-ref HEAD | pbcopy'
+alias gpl='git pull'
+alias gps='git push'
 
 alias mvi='mvim'
 
