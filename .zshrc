@@ -96,12 +96,14 @@ alias gd='git diff'
 alias gl='git log'
 alias gll='git last'
 alias gch='git checkout'
-alias gchb='git checkout-b'
+alias gchb='git checkout -b'
 alias gbc='git branch --contains'
 alias glc='git log --pretty=format:'%H' -n 1 | pbcopy'
 alias gcb='git rev-parse --abbrev-ref HEAD | pbcopy'
 alias gpl='git pull'
 alias gps='git push'
+
+alias sleepz='pmset sleepnow'
 
 alias mvi='mvim'
 
