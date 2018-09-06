@@ -107,6 +107,8 @@ alias sleepz='pmset sleepnow'
 
 alias mvi='mvim'
 
+alias bm='bundle; rake db:migrate'
+
 alias imgcat='/Users/natesholland/.scripts/imgcat'
 alias pdflatex='/Library/TeX/Root/bin/x86_64-darwin/pdflatex'
 
