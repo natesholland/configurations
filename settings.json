@@ -6,20 +6,49 @@
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
+                "name": "italic font",
                 "scope": [
-                    "comment"
+                "comment",
+                "keyword",
+                "storage",
+                "keyword.control",
+                "keyword.control.from",
+                "keyword.control.flow",
+                "keyword.operator.new",
+                "keyword.control.import",
+                "keyword.control.export",
+                "keyword.control.default",
+                "keyword.control.trycatch",
+                "keyword.control.conditional",
+                "storage.type",
+                // "storage.type.class",
+                // "storage.modifier.tsx",
+                // "storage.type.function",
+                // "storage.modifier.async",
+                // "variable.language",
+                // "variable.language.this",
+                // "variable.language.super",
+                // "variable.other.readwrite.instance",
+                "meta.class",
+                // "meta.var.expr",
+                "constant.language.null",
+                // "support.type.primitive",
+                // "entity.name.method.js",
+                // "entity.other.attribute-name",
+                // "punctuation.definition.comment",
+                // "text.html.basic entity.other.attribute-name",
+                // "tag.decorator.js entity.name.tag.js",
+                // "tag.decorator.js punctuation.definition.tag.js",
+                // "source.js constant.other.object.key.js string.unquoted.label.js",
                 ],
                 "settings": {
-                    // I want to comment things
-                    // "foreground": "#707080",
-                    "fontStyle": "italic",
+                "fontStyle": "italic",
                 }
             },
         ]
     },
     "explorer.confirmDelete": false,
     "terminal.external.osxExec": "iTerm.app",
-    "workbench.colorTheme": "Cobalt2",
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": true,
     "workbench.editor.enablePreviewFromQuickOpen": true,
@@ -45,5 +74,6 @@
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "solid",
     "editor.renderWhitespace": "all",
-    "workbench.preferredDarkColorTheme": "Cobalt2",
+    "workbench.preferredDarkColorTheme": "City Lights",
+    "workbench.colorTheme": "One Dark Pro",
 }
