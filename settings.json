@@ -9,8 +9,8 @@
                 "name": "italic font",
                 "scope": [
                 "comment",
-                "keyword",
                 "storage",
+                // "keyword",
                 "keyword.control",
                 "keyword.control.from",
                 "keyword.control.flow",
