@@ -1,0 +1,49 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.tabSize": 2,
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.scrollback": 10000,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment"
+                ],
+                "settings": {
+                    // I want to comment things
+                    // "foreground": "#707080",
+                    "fontStyle": "italic",
+                }
+            },
+        ]
+    },
+    "explorer.confirmDelete": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "workbench.colorTheme": "Cobalt2",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": "{{put-password-here}}"
+        }
+    ],
+    "workbench.editor.wrapTabs": true,
+    "window.zoomLevel": 2,
+    "editor.fontFamily": "operator Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "files.trimTrailingWhitespace": true,
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "solid",
+    "editor.renderWhitespace": "all",
+    "workbench.preferredDarkColorTheme": "Cobalt2",
+}
