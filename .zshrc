@@ -101,6 +101,10 @@ alias gps='git push'
 
 alias sleepz='pmset sleepnow'
 
+if command -v nvim >/dev/null 2>&1; then
+  alias vim="nvim"
+fi
+
 eval $(thefuck --alias)
 
 . /Users/natesholland/.z.sh
