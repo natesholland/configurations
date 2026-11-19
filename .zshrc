@@ -51,7 +51,7 @@ ZSH_THEME="nate"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby rails rvm)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,10 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-
-export PATH="$PATH:$HOME/.rvm/bin"
-
 alias gs='git status'
 alias g='git'
 alias gca='git commit -a'
@@ -104,13 +100,6 @@ alias gpl='git pull'
 alias gps='git push'
 
 alias sleepz='pmset sleepnow'
-
-alias mvi='mvim'
-
-alias bm='bundle; rake db:migrate'
-
-alias imgcat='/Users/natesholland/.scripts/imgcat'
-alias pdflatex='/Library/TeX/Root/bin/x86_64-darwin/pdflatex'
 
 eval $(thefuck --alias)
 
