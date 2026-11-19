@@ -1,3 +1,5 @@
 font-family = Operator Mono
 font-style = Book
+font-style-bold = Bold
 font-style-italic = Book Italic
+font-style-bold-italic = Bold Italic
